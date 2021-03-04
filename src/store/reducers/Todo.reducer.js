@@ -6,11 +6,21 @@ const slice = createSlice({
   reducers: {
     addTask(state, action) {
       if (state === null) {
-        return [{ subject: action.payload.subject, task: action.payload.task }];
+        return [
+          {
+            subject: action.payload.subject,
+            task: action.payload.task,
+            complete: false,
+          },
+        ];
       } else {
         return [
           ...state,
-          { subject: action.payload.subject, task: action.payload.task },
+          {
+            subject: action.payload.subject,
+            task: action.payload.task,
+            complete: false,
+          },
         ];
       }
     },
@@ -19,9 +29,18 @@ const slice = createSlice({
 
       return state;
     },
+
+    completeTask(state, action) {
+      const index = action.payload;
+      const data = state[index];
+
+      data.complete = !data.complete;
+
+      return state;
+    },
   },
 });
 
-export const { addTask, removeTask } = slice.actions;
+export const { addTask, removeTask, completeTask } = slice.actions;
 
 export default slice.reducer;
