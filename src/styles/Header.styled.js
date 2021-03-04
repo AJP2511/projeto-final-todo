@@ -18,4 +18,9 @@ export const SignatureContainer = styled.div`
   right: 5%;
   bottom: 50%;
   font-size: 1.125rem;
+
+  @media screen and (max-width: 720px) {
+    top: 90%;
+    right: 20%;
+  }
 `;
