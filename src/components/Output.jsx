@@ -9,11 +9,8 @@ import {
 } from "../styles/Output.styled";
 import { removeTask } from "../store/reducers/Todo.reducer";
 import PopUp from "./PopUp";
-import { closePopUp, openPopUp } from "../store/reducers/PopUp.reducer";
-import {
-  deleteConfirmed,
-  deleteDenied,
-} from "../store/reducers/ConfirmDelete.reducer";
+import { openPopUp } from "../store/reducers/PopUp.reducer";
+import { deleteDenied } from "../store/reducers/ConfirmDelete.reducer";
 
 const Output = () => {
   const [taskComplete, setTaskComplete] = useState(false);

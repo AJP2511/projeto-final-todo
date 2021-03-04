@@ -1,19 +1,14 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   PopContainer,
   PopInternal,
   ButtonsContainer,
 } from "../styles/PopUp.styled";
 import { closePopUp } from "../store/reducers/PopUp.reducer";
-import {
-  deleteConfirmed,
-  deleteDenied,
-} from "../store/reducers/ConfirmDelete.reducer";
+import { deleteConfirmed } from "../store/reducers/ConfirmDelete.reducer";
 
 const PopUp = () => {
-  const popUp = useSelector((state) => state.popUp);
-
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
