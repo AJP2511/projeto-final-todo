@@ -12,6 +12,10 @@ export const PopContainer = styled.div`
   align-items: center;
   backdrop-filter: blur(6px);
   z-index: 1000;
+
+  @media screen and (max-width: 720px) {
+    backdrop-filter: none;
+  }
 `;
 
 export const PopInternal = styled.div`
@@ -22,6 +26,10 @@ export const PopInternal = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 720px) {
+    background-color: rgba(15, 48, 92, 1);
+  }
 
   h2,
   h4 {
