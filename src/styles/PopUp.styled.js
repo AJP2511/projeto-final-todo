@@ -27,6 +27,11 @@ export const PopInternal = styled.div`
   h4 {
     margin: 10px 0;
   }
+
+  @media screen and (max-width: 720px) {
+    width: 90%;
+    height: 50%;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
