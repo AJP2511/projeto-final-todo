@@ -9,4 +9,7 @@ export const MainContainer = styled.div`
   );
 
   height: 100vh;
+
+  @media screen and (max-width: 720px) {
+  }
 `;
