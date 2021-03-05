@@ -5,6 +5,10 @@ export const InputContainer = styled.div`
   flex-grow: 0.5;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 720px) {
+    height: auto;
+  }
 `;
 
 export const InnerContainer = styled.form`
@@ -17,6 +21,10 @@ export const InnerContainer = styled.form`
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 720px) {
+    margin: 20px auto 0 auto;
+  }
 `;
 
 export const TitleContainer = styled.div`
