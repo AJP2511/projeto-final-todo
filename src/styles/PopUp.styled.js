@@ -42,13 +42,15 @@ export const PopInternal = styled.div`
   }
 `;
 
-export const ButtonsContainer = styled.div`
-  button {
-    border: none;
-    margin: 20px;
-    font-size: 1.125rem;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+export const ButtonsContainer = styled.div``;
+
+export const ButtonOption = styled.button`
+  border: none;
+  margin: 20px;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: ${(props) => props.colorBg};
+  color: ${(props) => props.colorFont};
+  cursor: pointer;
 `;

@@ -23,10 +23,14 @@ body {
 }
 @media screen and (max-width: 720px) {
   body {
-    background: rgb(255, 177, 59);
+    background: #fccf65;
   }
 
   html {
     font-size: 87.5%;
   }
+}
+
+button {
+  outline: none;
 }

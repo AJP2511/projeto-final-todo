@@ -14,6 +14,10 @@ export const OutputTaskContainer = styled.div`
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 720px) {
+    background-color: rgb(255, 177, 59);
+  }
 `;
 
 export const InternalTaskContainer = styled.div`

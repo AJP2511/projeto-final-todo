@@ -4,6 +4,7 @@ import {
   PopContainer,
   PopInternal,
   ButtonsContainer,
+  ButtonOption,
 } from "../styles/PopUp.styled";
 import { closePopUp } from "../store/reducers/PopUp.reducer";
 import { deleteConfirmed } from "../store/reducers/ConfirmDelete.reducer";
@@ -30,8 +31,10 @@ const PopUp = () => {
         <h2>Are you sure about that?!</h2>
         <h4>this action is irreversible</h4>
         <ButtonsContainer>
-          <button onClick={handleDelete}>Yes</button>
-          <button onClick={() => dispatch(closePopUp())}>No</button>
+          <ButtonOption onClick={handleDelete} colorBg="red" colorFont="black">
+            Yes
+          </ButtonOption>
+          <ButtonOption onClick={() => dispatch(closePopUp())}>No</ButtonOption>
         </ButtonsContainer>
       </PopInternal>
     </PopContainer>
