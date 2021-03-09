@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const OutputContainer = styled.div`
   flex-grow: 1;
+  padding: 10% 0;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const OutputTaskContainer = styled.div`
